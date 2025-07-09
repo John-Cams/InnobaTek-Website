@@ -1,4 +1,30 @@
-html {
-  height: 100%;
+/* CSS HEX */
+:root{
+  --black: #000500ff;
+  --dark-slate-gray: #324d54ff;
+  --hookers-green: #5e8281ff;
+  --mint-green: #bfe0d1ff;
+  --snow: #fefcffff;
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rectangle{
+  height: 10px;
   width: 100%;
+  background: var(--snow);
+}
+
+.big-border{
+  border:solid 10px red;
 }
