@@ -1,10 +1,12 @@
-/* CSS HEX */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 :root{
-  --black: #000500ff;
-  --dark-slate-gray: #324d54ff;
-  --hookers-green: #5e8281ff;
-  --mint-green: #bfe0d1ff;
-  --snow: #fefcffff;
+  --color1: #000500ff;
+  --color2: #324d54ff;
+  --color3: #5e8281ff;
+  --color4: #bfe0d1ff;
+  --color5: #fefcffff;
 }
   
 * {
@@ -12,19 +14,92 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: var(--black);
+  font-family: "Jura";
+  color: var(--color5);
+  background-color: var(--color1);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Rectangles used as spacers */
+
 .rectangle{
   height: 10px;
   width: 100%;
-  background: var(--snow);
 }
 
-.big-border{
-  border:solid 10px red;
+.md-rectangle{
+  height: 20px;
+  width: 100%;
+}
+
+.lg-rectangle{
+  height: 40px;
+  width: 100%;
+}
+
+/* Color variable initialization */
+
+.bg-ITblak{background-color:var(--color1);}
+.bg-ITgray{background-color:var(--color2);}
+.bg-ITgren{background-color:var(--color3);}
+.bg-ITmint{background-color:var(--color4);}
+.bg-ITwhit{background-color:var(--color5);}
+
+.fc-ITblak{color:var(--color1)!important;}
+.fc-ITgray{color:var(--color2)!important;}
+.fc-ITgren{color:var(--color3)!important;}
+.fc-ITmint{color:var(--color4)!important;}
+.fc-ITwhit{color:var(--color5)!important;}
+
+/* Navbar classes */
+
+.ITnavItem {
+  font-size: 40px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.ITnavItem:hover {
+  transform: scale(1.125);
+}
+
+/* Separate classes for mobile and desktop maintext */
+
+.ITtitle{
+  font-size: 80px;
+}
+
+.ITparag{
+  font-size: 40px;
+  font-family: "K2D";
+}
+
+.ITtitleMobile{
+  font-size: 40px;
+}
+
+.ITparagMobile{
+  font-size: 20px;
+  font-family: "K2D";  
+}
+
+/* Button classes */
+
+.ITbtn:hover{
+  transform: scale(1.125);
+  box-shadow: 0px 0px 10px 10px var(--color3);
+  cursor:pointer;
+}
+
+.ITbtn:active{
+  box-shadow: 0px 0px 0px 0px var(--color3);
+}
+
+/* Quotebox class */
+
+.quotebox{
+  border: 5px solid var(--color2);
+  border-radius: 50px;
 }
