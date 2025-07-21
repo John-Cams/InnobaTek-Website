@@ -7,6 +7,10 @@
   --color3: #5e8281ff;
   --color4: #bfe0d1ff;
   --color5: #fefcffff;
+
+  --alert1: #543232ff;
+  --alert2: #825e5eff;
+  --alert3: #e0bfbfff;
 }
   
 * {
@@ -46,12 +50,18 @@ body {
 .bg-ITgren{background-color:var(--color3);}
 .bg-ITmint{background-color:var(--color4);}
 .bg-ITwhit{background-color:var(--color5);}
+.bg-ITredd{background-color:var(--alert1);}
+.bg-ITredm{background-color:var(--alert2);}
+.bg-ITredl{background-color:var(--alert3);}
 
 .fc-ITblak{color:var(--color1)!important;}
 .fc-ITgray{color:var(--color2)!important;}
 .fc-ITgren{color:var(--color3)!important;}
 .fc-ITmint{color:var(--color4)!important;}
 .fc-ITwhit{color:var(--color5)!important;}
+.fc-ITredd{color:var(--alert1)!important;}
+.fc-ITredm{color:var(--alert2)!important;}
+.fc-ITredl{color:var(--alert3)!important;}
 
 /* Navbar classes */
 
@@ -106,7 +116,7 @@ body {
 
 /* Quotebox class */
 
-.quotebox{
+.roundedbox{
   border: 5px solid var(--color2);
   border-radius: 50px;
 }
@@ -115,4 +125,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.productRow{
+  display: flex;
+  justify-content: space-evenly;  
 }
