@@ -113,10 +113,14 @@ body {
   transform: scale(1.125);
   box-shadow: 0px 0px 10px 10px var(--color3);
   cursor:pointer;
+  background-color: var(--color4) !important;
+  color: var(--color1) !important;
 }
 
 .ITbtn:active{
   box-shadow: 0px 0px 0px 0px var(--color3);
+  background-color: var(--color4) !important;
+  color: var(--color1) !important;
 }
 
 .ITbtnr{
@@ -134,8 +138,9 @@ body {
 
 .ITbtnr:active{
   box-shadow: 0px 0px 0px 0px var(--alert2);
+  background-color: var(--alert3) !important;
+  color: var(--color1) !important;
 }
-
 /* Quotebox class */
 
 .roundedbox{
@@ -154,8 +159,10 @@ body {
   justify-content: space-evenly;  
 }
 
-.modal-dialog,
-.modal-content {
-    height: 70vh;
-    width: 100vh !important;
+.hidden{
+  visibility: hidden;
+}
+
+.ITabout{
+  overflow-wrap: break-word;
 }
