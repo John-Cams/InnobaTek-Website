@@ -6,14 +6,12 @@
   <meta name="viewport" content="width=device-width">
   <title>InnobaTek</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" /> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
 </head>
 
 <body>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
   <!-- Taskbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-ITblak">
@@ -33,14 +31,8 @@
             <a class="nav-link active fc-ITmint ITnavItem ITactive" aria-current="page" href="products.html">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fc-ITmint ITnavItem" href="#">Support</a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link fc-ITmint ITnavItem" href="#">About</a>
+            <a class="nav-link fc-ITmint ITnavItem" href="about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link fc-ITmint ITnavItem" href="#">Sign Up <img src="images/login.svg" height="50" alt="Log in icon"></a>
-          </li>        
         </ul>
       </div>
     </div>
@@ -58,39 +50,59 @@
           <img src="images/totallyMe.svg" alt="Quotation mark" width=100% height="280">
           <div class="d-flex justify-content-between align-items-center">
             <p class="text-left ITparag fc-ITgren mb-0">Item name</p>
-            <button type="button" class="btn bg-ITmint fc-ITblac ITbtn">Hello</button>
+            <button type="button" class="btn ITbtnr" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">$99.99</button>
+
           </div>
           <p class="fc-ITredl mb-0">Out of stock</p>
           <p class="text-left ITparagMobile fc-ITgren">Item Description Item Description Item Description Item Description Item Description Item Description </p>
         </div>
       </div> 
-
-      <div class="col-lg-4 mt-4">
-        <div class="p-3 roundedbox h-100">
-          <img src="images/totallyMe.svg" alt="Quotation mark" width=100% height="280">
-          <div class="d-flex justify-content-between align-items-center">
-            <p class="text-left ITparag fc-ITgren">Item name</p>
-            <button type="button" class="btn bg-ITmint fc-ITblac ITbtn">Hello</button>
+<!-- 
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <p class="text-left ITparagMobile fc-ITgren">Item Description Item Description Item Description Item Description Item Description Item Description </p>
-        </div>
-      </div> 
-
-      <div class="col-lg-4 mt-4">
-        <div class="p-3 roundedbox h-100">
-          <img src="images/totallyMe.svg" alt="Quotation mark" width=100% height="280">
-          <div class="d-flex justify-content-between align-items-center">
-            <p class="text-left ITparag fc-ITgren">Item name</p>
-            <button type="button" class="btn bg-ITmint fc-ITblac ITbtn">Hello</button>
+          <div class="modal-body">
+            ...
           </div>
-          <p class="text-left ITparagMobile fc-ITgren">Item Description Item Description Item Description Item Description Item Description Item Description </p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
-      </div> 
+      </div>
+    </div> -->
 
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+
+      
     </div>
     
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content ">
+        <div class="modal-body">
+          
+          <div class="container-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
 </html>

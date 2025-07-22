@@ -104,6 +104,11 @@ body {
 
 /* Button classes */
 
+.ITbtn{
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
 .ITbtn:hover{
   transform: scale(1.125);
   box-shadow: 0px 0px 10px 10px var(--color3);
@@ -112,6 +117,23 @@ body {
 
 .ITbtn:active{
   box-shadow: 0px 0px 0px 0px var(--color3);
+}
+
+.ITbtnr{
+  background-color: var(--alert3);
+  color: var(--color1);
+}
+
+.ITbtnr:hover{
+  background-color: var(--alert3);
+  color: var(--color1);
+  transform: scale(1.125);
+  box-shadow: 0px 0px 10px 10px var(--alert2);
+  cursor:pointer;
+}
+
+.ITbtnr:active{
+  box-shadow: 0px 0px 0px 0px var(--alert2);
 }
 
 /* Quotebox class */
@@ -130,4 +152,10 @@ body {
 .productRow{
   display: flex;
   justify-content: space-evenly;  
+}
+
+.modal-dialog,
+.modal-content {
+    height: 70vh;
+    width: 100vh !important;
 }
