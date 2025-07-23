@@ -212,12 +212,14 @@ body {
 }
 
 .aboutButton{
-  height: 30%;
+  height: 33%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* .aboutHalf{
-  height:100%
-} */
+.btnCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

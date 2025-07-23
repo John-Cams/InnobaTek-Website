@@ -26,5 +26,5 @@ function updateGreeting() {
   setTimeout(updateGreeting, timeUntilNext);
 }
 
-// Start
+
 updateGreeting();

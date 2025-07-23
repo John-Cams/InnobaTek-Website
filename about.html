@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" /> 
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -90,40 +89,97 @@
 
     </div>
 
-    <div class="row">
-      <div class="col-lg-12">
+    <div class="row aboutRow">
+      <div class="col-lg-4">
         <h1 class="ITaboutTitle fc-ITmint">About Me</h1>
         <p class="ITaboutSM fc-ITmint">
           I am John Louie Maniego. As of 2025 I am a rising junior at the California Academy of Math and Science. I have a great interest in computer science such as web development and software development. I have use Python and Java before in different projects as well as HTML, CSS, and JavaScript. 
         </p>
-      <!-- </div>
-      <div class="col-md-2">
-        <button class="aboutButton"></button>
-        <button class="aboutButton"></button>
-        <button class="aboutButton"></button>
       </div>
-      <div class="col-md-6">
-        <div class="aboutHalf">
-          <h1>Natural:</h1>
+
+
+      <div class="col-md-2 btnCol">
+        <button class="aboutButton fc-ITmint bg-ITgren" id="langBtn">Languages</button>
+        <button class="aboutButton fc-ITmint bg-ITgray" id="skillBtn">Skills</button>
+        <button class="aboutButton fc-ITmint bg-ITgray" id="expBtn">Experiences</button>
+      </div>
+      
+      <div class="aboutHalf bg-ITgray col-md-3 d-flex justify-content-center align-items-center" id="lang1">
+        <div class="align-middle">
+          <h1 class="fc-ITmint">Natural:</h1>
           <ul>
-            <li>English</li>
-            <li>Tagalog</li>
+            <li class="fc-ITmint">English</li>
+            <li class="fc-ITmint">Tagalog</li>
           </ul>
-        </div>
-        <div class="aboutHalf">
-          <h1>Natural:</h1>
+        </div>  
+      </div>
+      <div class="aboutHalf bg-ITgray col-md-3 d-flex justify-content-center align-items-center" id="lang2">
+        <div>
+          <h1 class="fc-ITmint">Programming:</h1>
           <ul>
-            <li>English</li>
-            <li>Tagalog</li>
+            <li class="fc-ITmint">Python</li>
+            <li class="fc-ITmint">Java</li>
+            <li class="fc-ITmint">HTML</li>
+            <li class="fc-ITmint">CSS</li>
+            <li class="fc-ITmint">JavaScript</li>          
           </ul>
-        </div>        
-      </div>       -->
+        </div>    
+      </div>  
+      
+      <div class="aboutHalf bg-ITgray col-md-3 d-none justify-content-center align-items-center hideStart" id="skill1">
+        <div class="align-middle">
+          <h1 class="fc-ITmint">Hard skills:</h1>
+          <ul>
+            <li class="fc-ITmint">Google workspace</li>
+            <li class="fc-ITmint">Microsoft workspace</li>
+            <li class="fc-ITmint">VScode</li>
+            <li class="fc-ITmint">UI design</li>
+            <li class="fc-ITmint">Graphic Design</li>
+          </ul>
+        </div>  
+      </div>
+      <div class="aboutHalf bg-ITgray col-md-3 d-none justify-content-center align-items-center hideStart" id="skill2">
+        <div>
+          <h1 class="fc-ITmint">Soft skills:</h1>
+          <ul>
+            <li class="fc-ITmint">Problem Solving</li>
+            <li class="fc-ITmint">Communication</li>
+            <li class="fc-ITmint">Creativity</li>
+            <li class="fc-ITmint">Teamwork</li>
+            <li class="fc-ITmint">Leadership</li>          
+          </ul>
+        </div>    
+      </div> 
+      
+      <div class="aboutHalf bg-ITgray col-md-6 d-none justify-content-center align-items-center hideStart exp" id="exp1">
+        <div class="align-middle">
+          <ul>
+            <li class="fc-ITmint">
+              <p><strong>First Tech Challenge</strong></p>
+              <p>2023-2024</p>
+              <p>Assembly and Admin member</p>
+            </li>
+            <li class="fc-ITmint">
+              <p><strong>First Robotics Competition</strong></p>
+              <p>2024-Present</p>
+              <p>Programming member</p>
+            </li>
+            <li class="fc-ITmint">
+              <p><strong>Temp Name Co.</strong></p>
+              <p>2025-Startup</p>
+              <p>Developer</p>
+            </li>                        
+          </ul>
+        </div>    
+      </div> 
+
     </div>  
 
 
 
   </div>
 
+  <script src="about.js"></script>  
 </body>
 
 </html>
