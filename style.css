@@ -124,24 +124,26 @@ body {
 }
 
 .ITbtnr{
-  background-color: var(--alert3);
-  color: var(--color1);
+  background-color: var(--alert3) !important;
+  color: var(--color1) !important;
 }
 
 .ITbtnr:hover{
   background-color: var(--alert3);
   color: var(--color1);
-  transform: scale(1.125);
+  /* transform: scale(1.125);
   box-shadow: 0px 0px 10px 10px var(--alert2);
-  cursor:pointer;
+  cursor:pointer; */
 }
 
 .ITbtnr:active{
-  box-shadow: 0px 0px 0px 0px var(--alert2);
   background-color: var(--alert3) !important;
   color: var(--color1) !important;
+  transform: none !important;
+  transition: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
-/* Quotebox class */
 
 .roundedbox{
   border: 5px solid var(--color2);
@@ -165,4 +167,57 @@ body {
 
 .ITabout{
   overflow-wrap: break-word;
+  font-size: 3em;
 }
+
+.ITaboutSM{
+  overflow-wrap: break-word;
+  font-size: 2em;
+}
+
+.ITaboutTitle{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.ITaboutSubtitle{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.leftAlign{
+  text-align: left;
+}
+
+.middleAlign{
+  text-align: center;
+}
+
+.rightAlign{
+  text-align: right;
+}
+
+.shopImage{
+  object-fit: contain;
+}
+
+.poster{
+  outline-style: solid;
+  outline-color:var(--color2)
+}
+
+.screenshots{
+  width: 30%;
+  height:auto;
+}
+
+.aboutButton{
+  height: 30%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .aboutHalf{
+  height:100%
+} */

@@ -1,25 +1,30 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+function getGreeting() {
+  const hour = new Date().getHours();
+  
+  if (hour < 12) return "Good morning";
+  if (hour < 18) return "Good afternoon";
+  return "Good evening";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+function updateGreeting() {
+  const aboutParagraph = document.getElementById("abtPara");
+  const greeting = getGreeting();
+  aboutParagraph.innerHTML = `${greeting}, I am John Louie Maniego. As of 2025 I am a rising junior at the California Academy of Math and Science. I have a great interest in computer science such as web development and software development. I have used Python and Java before in different projects as well as HTML, CSS, and JavaScript.`
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  const now = new Date();
+  let nextChange = new Date();
+
+  if (now.getHours() < 12) {
+    nextChange.setHours(12, 0, 0, 0);
+  } else if (now.getHours() < 18) {
+    nextChange.setHours(18, 0, 0, 0);
+  } else {
+    nextChange.setHours(24, 0, 0, 0);
   }
+
+  const timeUntilNext = nextChange - now;
+  setTimeout(updateGreeting, timeUntilNext);
 }
+
+// Start
+updateGreeting();
